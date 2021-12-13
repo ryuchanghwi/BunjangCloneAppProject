@@ -1,0 +1,6 @@
+framework module Pods_BunjangClone {
+  umbrella header "Pods-BunjangClone-umbrella.h"
+
+  export *
+  module * { export * }
+}

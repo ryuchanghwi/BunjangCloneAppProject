@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Store Intro BottomsheetVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="StoreIntroBottomsheetVC" id="Y6W-OH-hqX" customClass="StoreIntroBottomsheetVC" customModule="BunjangClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1h3-nw-waI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="상점 소개" id="RSb-Wg-D5o">
+                                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" style="plain" id="Vd7-0l-SwA">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="확인" style="plain" id="esq-RS-WYc">
+                                            <color key="tintColor" red="0.84457504750000001" green="0.1191218272" blue="0.094485513869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="66q-Qk-DSx">
+                                <rect key="frame" x="0.0" y="88" width="414" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="NUV-NN-cNU"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="66q-Qk-DSx" secondAttribute="trailing" id="2uV-O5-QQp"/>
+                            <constraint firstItem="66q-Qk-DSx" firstAttribute="top" secondItem="1h3-nw-waI" secondAttribute="bottom" id="7fE-Mp-IwA"/>
+                            <constraint firstItem="1h3-nw-waI" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Kk3-pm-P4a"/>
+                            <constraint firstItem="1h3-nw-waI" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="dNW-2l-Kj9"/>
+                            <constraint firstAttribute="trailing" secondItem="1h3-nw-waI" secondAttribute="trailing" id="hIo-EM-zqH"/>
+                            <constraint firstItem="66q-Qk-DSx" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jw9-xK-lop"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="storeIntroTextView" destination="66q-Qk-DSx" id="jvI-nK-Dca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="48"/>
+        </scene>
+        <!--Exchange PolicyVC-->
+        <scene sceneID="n1X-wW-gQh">
+            <objects>
+                <viewController storyboardIdentifier="ExchangePolicyVC" id="kNa-j7-J50" customClass="ExchangePolicyVC" customModule="BunjangClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="K56-ec-mqv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iOR-v1-TXc">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="교환/반품환불 정책" id="bNN-Ev-8GM">
+                                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" style="plain" id="dhI-Q7-bBw">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="확인" style="plain" id="lKs-tg-fEb">
+                                            <color key="tintColor" red="0.84457504750000001" green="0.1191218272" blue="0.094485513869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="w5J-vE-Hn2">
+                                <rect key="frame" x="0.0" y="88" width="414" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="pgH-iK-R1H"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vlu-dX-9mT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="w5J-vE-Hn2" secondAttribute="trailing" id="2D0-uu-Ilb"/>
+                            <constraint firstItem="w5J-vE-Hn2" firstAttribute="top" secondItem="iOR-v1-TXc" secondAttribute="bottom" id="KJD-nA-X5T"/>
+                            <constraint firstItem="iOR-v1-TXc" firstAttribute="leading" secondItem="K56-ec-mqv" secondAttribute="leading" id="VUv-l1-R8J"/>
+                            <constraint firstItem="iOR-v1-TXc" firstAttribute="top" secondItem="vlu-dX-9mT" secondAttribute="top" id="eh3-js-2az"/>
+                            <constraint firstItem="vlu-dX-9mT" firstAttribute="trailing" secondItem="iOR-v1-TXc" secondAttribute="trailing" id="g0L-LK-VsM"/>
+                            <constraint firstItem="w5J-vE-Hn2" firstAttribute="leading" secondItem="vlu-dX-9mT" secondAttribute="leading" id="uvq-Ja-83P"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ExchangePoliyTextView" destination="w5J-vE-Hn2" id="qOC-4i-SvX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BDL-DU-UQD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="62"/>
+        </scene>
+        <!--Precations BottomsheetVC-->
+        <scene sceneID="QCw-5z-j6B">
+            <objects>
+                <viewController storyboardIdentifier="PrecationsBottomsheetVC" id="uMF-FR-clu" customClass="PrecationsBottomsheetVC" customModule="BunjangClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="556-w9-tX4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p20-vz-2GK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="구매전 유의사항" id="Tr8-b1-yFC">
+                                        <barButtonItem key="leftBarButtonItem" image="xmark" catalog="system" style="plain" id="BN4-2x-ek8">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="확인" style="plain" id="CdJ-nR-zSO">
+                                            <color key="tintColor" red="0.84457504750000001" green="0.1191218272" blue="0.094485513869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4am-aF-ab9">
+                                <rect key="frame" x="0.0" y="88" width="414" height="400"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="im3-bo-ixr"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yz8-MX-2qa"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="4am-aF-ab9" firstAttribute="top" secondItem="p20-vz-2GK" secondAttribute="bottom" id="1rH-bd-jta"/>
+                            <constraint firstAttribute="trailing" secondItem="4am-aF-ab9" secondAttribute="trailing" id="6zp-cY-68F"/>
+                            <constraint firstItem="p20-vz-2GK" firstAttribute="leading" secondItem="556-w9-tX4" secondAttribute="leading" id="B27-Cf-F8Z"/>
+                            <constraint firstItem="4am-aF-ab9" firstAttribute="leading" secondItem="yz8-MX-2qa" secondAttribute="leading" id="EJG-hj-flX"/>
+                            <constraint firstItem="yz8-MX-2qa" firstAttribute="trailing" secondItem="p20-vz-2GK" secondAttribute="trailing" id="Iqf-td-fcr"/>
+                            <constraint firstAttribute="trailing" secondItem="4am-aF-ab9" secondAttribute="trailing" id="SU3-a4-bkx"/>
+                            <constraint firstItem="p20-vz-2GK" firstAttribute="top" secondItem="yz8-MX-2qa" secondAttribute="top" id="pZm-qM-NN8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="PrecautionTextView" destination="4am-aF-ab9" id="LYb-s2-7HI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uAV-YG-dyv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1731" y="62"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SplashViewController" id="Y6W-OH-hqX" customClass="SplashViewController" customModule="BunjangClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Obt-VS-07B">
+                                <rect key="frame" x="0.0" y="109" width="428" height="498"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </scrollView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="Ire-vp-5Oe">
+                                <rect key="frame" x="144.66666666666666" y="612.66666666666663" width="138.99999999999997" height="26.333333333333371"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k6F-ie-1i7">
+                                <rect key="frame" x="143" y="839" width="142" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="다른 방법으로 로그인">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="anyBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="EOp-mb-CG8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLS-ci-1pa">
+                                <rect key="frame" x="40" y="659" width="348" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="3cd-DP-grF"/>
+                                </constraints>
+                                <state key="normal" title="카카오톡으로 로그인"/>
+                                <connections>
+                                    <action selector="kakaoBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dgG-i0-MrP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdi-zV-ExJ">
+                                <rect key="frame" x="40" y="739" width="348" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="Kbz-TM-DvL"/>
+                                </constraints>
+                                <state key="normal" title="이메일로 로그인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="G88-bT-O6a"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfLoginImg" translatesAutoresizingMaskIntoConstraints="NO" id="ujx-Kl-1xs">
+                                <rect key="frame" x="59.999999999999993" y="759" width="29.666666666666664" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ujx-Kl-1xs" secondAttribute="height" multiplier="82:83" id="RZo-Lg-CGo"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CLS-ci-1pa" firstAttribute="top" secondItem="Ire-vp-5Oe" secondAttribute="bottom" constant="20" id="4co-aA-fur"/>
+                            <constraint firstItem="ujx-Kl-1xs" firstAttribute="top" secondItem="kdi-zV-ExJ" secondAttribute="top" constant="20" id="8Hw-tC-eq6"/>
+                            <constraint firstItem="ujx-Kl-1xs" firstAttribute="bottom" secondItem="kdi-zV-ExJ" secondAttribute="bottom" constant="-20" id="Ajb-WG-7G2"/>
+                            <constraint firstItem="CLS-ci-1pa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LyV-eX-Zb9"/>
+                            <constraint firstItem="CLS-ci-1pa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="WRF-lu-FYG"/>
+                            <constraint firstItem="kdi-zV-ExJ" firstAttribute="top" secondItem="CLS-ci-1pa" secondAttribute="bottom" constant="10" id="ZTF-3p-3z7"/>
+                            <constraint firstItem="kdi-zV-ExJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="cVd-5R-XOt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="k6F-ie-1i7" secondAttribute="bottom" constant="20" id="hlq-C8-9LG"/>
+                            <constraint firstItem="kdi-zV-ExJ" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="lCr-Nq-I8Y"/>
+                            <constraint firstItem="k6F-ie-1i7" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sKw-SS-EQC"/>
+                            <constraint firstItem="k6F-ie-1i7" firstAttribute="top" secondItem="kdi-zV-ExJ" secondAttribute="bottom" constant="30" id="uS6-lV-eq2"/>
+                            <constraint firstItem="Ire-vp-5Oe" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="vdc-h0-f7U"/>
+                            <constraint firstItem="ujx-Kl-1xs" firstAttribute="leading" secondItem="kdi-zV-ExJ" secondAttribute="leading" constant="20" id="zHo-UM-vB4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BRI-4Q-yDb"/>
+                    <connections>
+                        <outlet property="pageControl" destination="Ire-vp-5Oe" id="JKO-VX-zNk"/>
+                        <outlet property="scrollView" destination="Obt-VS-07B" id="4uS-24-EjC"/>
+                        <outlet property="toEmailLoginButton" destination="kdi-zV-ExJ" id="7JU-yp-SV0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="961.68224299065412" y="83.585313174946009"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="selfLoginImg" width="236" height="234"/>
+    </resources>
+</document>

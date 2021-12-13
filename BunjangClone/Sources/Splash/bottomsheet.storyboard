@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Bottom SheetVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="BottomSheetVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="BottomSheetVC" customModule="BunjangClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="다른 방법으로 로그인" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeW-29-lSE">
+                                <rect key="frame" x="30" y="84" width="247" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="facebookImg" translatesAutoresizingMaskIntoConstraints="NO" id="fdJ-sS-zMd">
+                                <rect key="frame" x="30" y="150" width="48.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="2Pq-Qv-KgL"/>
+                                    <constraint firstAttribute="width" secondItem="fdJ-sS-zMd" secondAttribute="height" multiplier="31:32" id="zLA-ma-E26"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="naverImg" translatesAutoresizingMaskIntoConstraints="NO" id="IpQ-5K-CJP">
+                                <rect key="frame" x="30" y="210" width="48.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Tu0-B1-qUY"/>
+                                    <constraint firstAttribute="width" secondItem="IpQ-5K-CJP" secondAttribute="height" multiplier="31:32" id="jLn-FS-mIs"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selfLoginImg" translatesAutoresizingMaskIntoConstraints="NO" id="OLJ-ud-jYv">
+                                <rect key="frame" x="30" y="270" width="48.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7GG-pO-WWI"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YC1-1N-lJD">
+                                <rect key="frame" x="88.5" y="158" width="160" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="페이스북으로 시작하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1eS-fq-jGU">
+                                <rect key="frame" x="88.5" y="218" width="129" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="네이버로 시작하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ue8-Nu-Hyz">
+                                <rect key="frame" x="88.5" y="278" width="94" height="34"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <state key="normal" title="회원가입하기">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selfLoginBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6D8-BR-Vlg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fdJ-sS-zMd" firstAttribute="top" secondItem="BeW-29-lSE" secondAttribute="bottom" constant="30" id="9GJ-RE-SD6"/>
+                            <constraint firstItem="1eS-fq-jGU" firstAttribute="centerY" secondItem="IpQ-5K-CJP" secondAttribute="centerY" id="Cgb-8O-iH3"/>
+                            <constraint firstItem="BeW-29-lSE" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="D78-cQ-Dbr"/>
+                            <constraint firstItem="Ue8-Nu-Hyz" firstAttribute="centerY" secondItem="OLJ-ud-jYv" secondAttribute="centerY" id="EUf-RC-gJK"/>
+                            <constraint firstItem="IpQ-5K-CJP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="PNz-3V-R1F"/>
+                            <constraint firstItem="YC1-1N-lJD" firstAttribute="centerY" secondItem="fdJ-sS-zMd" secondAttribute="centerY" id="djJ-E0-dvq"/>
+                            <constraint firstItem="OLJ-ud-jYv" firstAttribute="width" secondItem="OLJ-ud-jYv" secondAttribute="height" multiplier="31:32" id="f8K-dN-2di"/>
+                            <constraint firstItem="OLJ-ud-jYv" firstAttribute="top" secondItem="IpQ-5K-CJP" secondAttribute="bottom" constant="10" id="gas-EW-FQu"/>
+                            <constraint firstItem="fdJ-sS-zMd" firstAttribute="top" secondItem="BeW-29-lSE" secondAttribute="bottom" constant="30" id="iXM-d1-Fof"/>
+                            <constraint firstItem="BeW-29-lSE" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="kN2-ow-5ds"/>
+                            <constraint firstItem="1eS-fq-jGU" firstAttribute="leading" secondItem="IpQ-5K-CJP" secondAttribute="trailing" constant="10" id="r6f-B5-mzm"/>
+                            <constraint firstItem="Ue8-Nu-Hyz" firstAttribute="leading" secondItem="OLJ-ud-jYv" secondAttribute="trailing" constant="10" id="uoc-gI-50o"/>
+                            <constraint firstItem="OLJ-ud-jYv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="w6d-W0-IhL"/>
+                            <constraint firstItem="YC1-1N-lJD" firstAttribute="leading" secondItem="fdJ-sS-zMd" secondAttribute="trailing" constant="10" id="xiU-hc-FVa"/>
+                            <constraint firstItem="fdJ-sS-zMd" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="y0L-1N-Kys"/>
+                            <constraint firstItem="IpQ-5K-CJP" firstAttribute="top" secondItem="fdJ-sS-zMd" secondAttribute="bottom" constant="10" id="yMR-bS-BP4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wl1-md-QAi"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="971.01449275362324" y="79.6875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="facebookImg" width="224" height="230"/>
+        <image name="naverImg" width="232" height="218"/>
+        <image name="selfLoginImg" width="236" height="234"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

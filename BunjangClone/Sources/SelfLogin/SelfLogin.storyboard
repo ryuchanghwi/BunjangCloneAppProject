@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Self Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelfLoginViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SelfLoginViewController" customModule="BunjangClone" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vI-xQ-PRA">
+                                <rect key="frame" x="30" y="64" width="22" height="30.5"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="chevron.backward" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="30"/>
+                                </state>
+                                <connections>
+                                    <action selector="backBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="WYj-3b-idc"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="아이디와 비밀빈호를 입력해주세요" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xQm-61-Jn6">
+                                <rect key="frame" x="30" y="133.5" width="224" height="67"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9g9-Kg-eje" customClass="TweeAttributedTextField" customModule="TweeTextField">
+                                <rect key="frame" x="20" y="300.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Mzs-e6-a7q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="아이디를 입력해주세요"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="IDWhileEditing:" destination="Y6W-OH-hqX" eventType="editingChanged" id="Hel-5B-C8F"/>
+                                </connections>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="KzM-IE-OAs" customClass="TweeAttributedTextField" customModule="TweeTextField">
+                                <rect key="frame" x="20" y="390.5" width="374" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7IR-Iu-zOF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="activeLineColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="activeLineWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="animationDuration">
+                                        <real key="value" value="0.29999999999999999"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="lineColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="tweePlaceholder" value="아이디를 입력해주세요"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="98W-r1-90X">
+                                <rect key="frame" x="30" y="762" width="354" height="50"/>
+                                <color key="backgroundColor" red="0.8460949659" green="0.072091259059999996" blue="0.095859967170000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="erx-Eu-cbC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="23"/>
+                                <state key="normal" title="확인">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="selfLogInBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Khf-JR-lE6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xQm-61-Jn6" firstAttribute="top" secondItem="8vI-xQ-PRA" secondAttribute="bottom" constant="39" id="1Xf-7T-lch"/>
+                            <constraint firstItem="KzM-IE-OAs" firstAttribute="top" secondItem="9g9-Kg-eje" secondAttribute="bottom" constant="40" id="Cva-fn-h10"/>
+                            <constraint firstItem="xQm-61-Jn6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="Dpv-7X-rU7"/>
+                            <constraint firstItem="9g9-Kg-eje" firstAttribute="top" secondItem="xQm-61-Jn6" secondAttribute="bottom" constant="100" id="FOm-Lw-Q42"/>
+                            <constraint firstItem="8vI-xQ-PRA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="GaM-eV-AQy"/>
+                            <constraint firstItem="98W-r1-90X" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="NwZ-d3-NU7"/>
+                            <constraint firstItem="8vI-xQ-PRA" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="c8H-Bd-cTa"/>
+                            <constraint firstItem="9g9-Kg-eje" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gJW-6e-6Bv"/>
+                            <constraint firstItem="KzM-IE-OAs" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="gnF-Nr-zUw"/>
+                            <constraint firstItem="9g9-Kg-eje" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hIS-Lr-VTW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="98W-r1-90X" secondAttribute="bottom" constant="50" id="kIw-pi-Uvz"/>
+                            <constraint firstItem="KzM-IE-OAs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="qEE-QJ-d1R"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="98W-r1-90X" secondAttribute="trailing" constant="30" id="yuh-da-4af"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="selfLoginIDTextField" destination="9g9-Kg-eje" id="fUp-rF-f1z"/>
+                        <outlet property="selfLoginOKBtn" destination="98W-r1-90X" id="Vdj-CV-VrL"/>
+                        <outlet property="selfLoginPasswordTextField" destination="KzM-IE-OAs" id="4Hv-ZU-wNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chevron.backward" catalog="system" width="96" height="128"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
