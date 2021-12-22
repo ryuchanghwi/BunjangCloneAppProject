@@ -36,10 +36,14 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CLS-ci-1pa">
                                 <rect key="frame" x="40" y="659" width="348" height="70"/>
+                                <color key="backgroundColor" red="0.97692221400000001" green="0.87908512350000001" blue="0.03015689924" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="3cd-DP-grF"/>
                                 </constraints>
-                                <state key="normal" title="카카오톡으로 로그인"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="카카오톡으로 로그인">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
                                 <connections>
                                     <action selector="kakaoBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dgG-i0-MrP"/>
                                 </connections>
@@ -62,13 +66,23 @@
                                     <constraint firstAttribute="width" secondItem="ujx-Kl-1xs" secondAttribute="height" multiplier="82:83" id="RZo-Lg-CGo"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kakaoImg" translatesAutoresizingMaskIntoConstraints="NO" id="Y9C-d9-tac">
+                                <rect key="frame" x="59.999999999999993" y="679" width="29.666666666666664" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hXe-bu-O8X"/>
+                                    <constraint firstAttribute="width" constant="29.670000000000002" id="oW0-nr-eb6"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="kdi-zV-ExJ" firstAttribute="top" secondItem="Y9C-d9-tac" secondAttribute="bottom" constant="30" id="0hz-k7-Lfg"/>
                             <constraint firstItem="CLS-ci-1pa" firstAttribute="top" secondItem="Ire-vp-5Oe" secondAttribute="bottom" constant="20" id="4co-aA-fur"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Y9C-d9-tac" secondAttribute="trailing" constant="338.32999999999998" id="64T-RJ-OOm"/>
                             <constraint firstItem="ujx-Kl-1xs" firstAttribute="top" secondItem="kdi-zV-ExJ" secondAttribute="top" constant="20" id="8Hw-tC-eq6"/>
                             <constraint firstItem="ujx-Kl-1xs" firstAttribute="bottom" secondItem="kdi-zV-ExJ" secondAttribute="bottom" constant="-20" id="Ajb-WG-7G2"/>
+                            <constraint firstItem="Y9C-d9-tac" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="E8i-HU-Ggy"/>
                             <constraint firstItem="CLS-ci-1pa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="LyV-eX-Zb9"/>
                             <constraint firstItem="CLS-ci-1pa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="WRF-lu-FYG"/>
                             <constraint firstItem="kdi-zV-ExJ" firstAttribute="top" secondItem="CLS-ci-1pa" secondAttribute="bottom" constant="10" id="ZTF-3p-3z7"/>
@@ -83,6 +97,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="BRI-4Q-yDb"/>
                     <connections>
+                        <outlet property="kakaoButton" destination="CLS-ci-1pa" id="4e3-gh-2kh"/>
                         <outlet property="pageControl" destination="Ire-vp-5Oe" id="JKO-VX-zNk"/>
                         <outlet property="scrollView" destination="Obt-VS-07B" id="4uS-24-EjC"/>
                         <outlet property="toEmailLoginButton" destination="kdi-zV-ExJ" id="7JU-yp-SV0"/>
@@ -94,6 +109,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="kakaoImg" width="152" height="134"/>
         <image name="selfLoginImg" width="236" height="234"/>
     </resources>
 </document>

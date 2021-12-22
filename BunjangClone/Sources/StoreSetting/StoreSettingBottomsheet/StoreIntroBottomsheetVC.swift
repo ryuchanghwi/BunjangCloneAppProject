@@ -9,10 +9,10 @@ import Foundation
 import UIKit
 import PanModal
 
-class StoreIntroBottomsheetVC : UIViewController, UITextViewDelegate {
-//    func storeIntroChange() {
-//        <#code#>
-//    }
+class StoreIntroBottomsheetVC : UIViewController, UITextViewDelegate, storeIntroChangeDelegate {
+    func storeIntroChange() {
+        storeSettingVC?.storeIntroLabel.text = storeIntroTextView.text
+    }
     
     var storeSettingVC : StoreSettingViewController?
     
@@ -47,12 +47,17 @@ class StoreIntroBottomsheetVC : UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         placeholerSetting()
-//        storeSettingVC?.storeIntroDelegate = self
+        storeSettingVC?.storeIntroDelegate = self
     }
     
     
     
     //MARK: - Actions
+    @IBAction func okayBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        storeIntroChange()
+    }
+    
 }
 
 

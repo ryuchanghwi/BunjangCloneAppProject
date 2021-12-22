@@ -17,4 +17,5 @@ struct LoginResponse {
     static var myUserIdx = 0
     static var ResponseEmail = ""
     static var ResponsePassword = ""
+    static var myJWT = ""
 }

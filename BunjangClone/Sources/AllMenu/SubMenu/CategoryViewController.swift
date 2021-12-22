@@ -29,8 +29,15 @@ class CategoryViewController: BaseViewController {
     }
     
     @IBAction func sneakersBtn(_ sender: Any) {
-        let vc = UIStoryboard(name: "bottomsheet", bundle: nil).instantiateViewController(withIdentifier: "BottomSheetVC") as! BottomSheetVC
-        presentPanModal(vc)
+//                let subCategoryVC = UIStoryboard(name: "SubCategory", bundle: nil).instantiateViewController(identifier: "SubCategoryVC") as! SubCategoryVC
+//                self.navigationController?.pushViewController(subCategoryVC, animated: true)
+        
+        
+        
+        let subCategoryStoryboard = UIStoryboard.init(name: "SubCategory", bundle: nil)
+        guard let subCateboryVC = subCategoryStoryboard.instantiateViewController(identifier: "SubCategoryVC") as? SubCategoryVC else { return }
+        subCateboryVC.modalPresentationStyle = .fullScreen
+        present(subCateboryVC, animated: true, completion: nil)
     }
     
     

@@ -30,7 +30,7 @@ class LocationRequest {
                 switch response.result {
                 case .success(let response):
                     print("DEBUG>> Location Response \(response)")
-//                    delegate.didSuccess(response)
+
                     LocationResult.LocationSearchState = true
                     viewContrller.didRetrieveLocation(result: response)
                 

@@ -26,6 +26,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="확인" style="plain" id="esq-RS-WYc">
                                             <color key="tintColor" red="0.84457504750000001" green="0.1191218272" blue="0.094485513869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="okayBtn:" destination="Y6W-OH-hqX" id="l8w-WQ-gic"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -37,7 +40,7 @@
                                     <constraint firstAttribute="height" constant="400" id="NUV-NN-cNU"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -78,6 +81,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="확인" style="plain" id="lKs-tg-fEb">
                                             <color key="tintColor" red="0.84457504750000001" green="0.1191218272" blue="0.094485513869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="okayBtn:" destination="kNa-j7-J50" id="QEJ-hh-IaR"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -89,7 +95,7 @@
                                     <constraint firstAttribute="height" constant="400" id="pgH-iK-R1H"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -130,6 +136,9 @@
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" title="확인" style="plain" id="CdJ-nR-zSO">
                                             <color key="tintColor" red="0.84457504750000001" green="0.1191218272" blue="0.094485513869999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="okayBtn:" destination="uMF-FR-clu" id="lmB-Ox-fLI"/>
+                                            </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
@@ -141,7 +150,7 @@
                                     <constraint firstAttribute="height" constant="400" id="im3-bo-ixr"/>
                                 </constraints>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>

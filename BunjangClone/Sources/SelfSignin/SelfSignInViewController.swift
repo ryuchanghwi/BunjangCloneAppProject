@@ -68,9 +68,12 @@ class SelfSignInViewController: BaseViewController, UITextViewDelegate {
             
 
             
-            
-            
-            
+            showIndicator() //로딩나타남
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                self.dismissIndicator() //로딩해제
+                
+            }
+            dismiss(animated: true, completion: nil)
             
         }
     }

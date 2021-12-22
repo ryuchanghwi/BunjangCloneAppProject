@@ -52,10 +52,7 @@ class ContainerViewController: BaseViewController {
         }
     }
     @IBAction func registerBtn(_ sender: Any) {
-//        let goodsRegisterStoryboard = UIStoryboard.init(name: "goodsRegister", bundle: nil)
-//        guard let goodsVC = goodsRegisterStoryboard.instantiateViewController(identifier: "GoodsRegisterViewController") as? GoodsRegisterViewController else { return }
-//        goodsVC.modalPresentationStyle = .fullScreen
-//        present(goodsVC, animated: true, completion: nil)
+
         let goodsRegisterStoryboard = UIStoryboard.init(name: "goodsRegister", bundle: nil)
         let goodsVC = goodsRegisterStoryboard.instantiateViewController(identifier: "GoodsRegisterViewController")
         self.navigationController?.pushViewController(goodsVC, animated: true)

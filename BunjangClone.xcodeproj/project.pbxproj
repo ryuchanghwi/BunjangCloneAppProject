@@ -36,8 +36,6 @@
 		A53A77A127670F54006327D0 /* MySetting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A77A027670F54006327D0 /* MySetting.storyboard */; };
 		A53A77A327672956006327D0 /* DeliveryLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A77A227672956006327D0 /* DeliveryLocation.storyboard */; };
 		A53A77A52767296A006327D0 /* DeliveryLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77A42767296A006327D0 /* DeliveryLocationViewController.swift */; };
-		A53A77A727672E08006327D0 /* ClickVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77A627672E08006327D0 /* ClickVC.swift */; };
-		A53A77A927672E2A006327D0 /* DeliveryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77A827672E2A006327D0 /* DeliveryVC.swift */; };
 		A53A77AB27673264006327D0 /* DeliveryAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77AA27673264006327D0 /* DeliveryAddViewController.swift */; };
 		A53A77AE27674153006327D0 /* RequestBottomsheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77AD27674153006327D0 /* RequestBottomsheetViewController.swift */; };
 		A53A77B027674164006327D0 /* RequestBottomsheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A77AF27674164006327D0 /* RequestBottomsheet.storyboard */; };
@@ -45,6 +43,43 @@
 		A53A77B5276747B3006327D0 /* ExchangePolicyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77B4276747B3006327D0 /* ExchangePolicyVC.swift */; };
 		A53A77B72767482E006327D0 /* PrecationsBottomsheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77B62767482E006327D0 /* PrecationsBottomsheetVC.swift */; };
 		A53A77B9276748CA006327D0 /* StoreSettingBS.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A77B8276748CA006327D0 /* StoreSettingBS.storyboard */; };
+		A53A77BE2767B9EE006327D0 /* UserCorrectionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77BD2767B9ED006327D0 /* UserCorrectionResponse.swift */; };
+		A53A77C02767BA0D006327D0 /* UserCorrectionInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77BF2767BA0D006327D0 /* UserCorrectionInfo.swift */; };
+		A53A77C22767BC1A006327D0 /* UserCorrectionDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77C12767BC1A006327D0 /* UserCorrectionDataManager.swift */; };
+		A53A77C927687543006327D0 /* goodRequestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77C827687543006327D0 /* goodRequestCollectionViewCell.swift */; };
+		A53A77CB2768779B006327D0 /* GoodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77CA2768779B006327D0 /* GoodsResponse.swift */; };
+		A53A77CD27687C58006327D0 /* GoodsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77CC27687C58006327D0 /* GoodsRequest.swift */; };
+		A53A77D227689D9C006327D0 /* DetailGoodsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77D127689D9C006327D0 /* DetailGoodsViewController.swift */; };
+		A53A77D527690D3D006327D0 /* DetailGoodsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77D427690D3D006327D0 /* DetailGoodsResponse.swift */; };
+		A53A77D727690EC7006327D0 /* DetailGoodsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77D627690EC7006327D0 /* DetailGoodsRequest.swift */; };
+		A53A77DA2769C9E2006327D0 /* HomeSubBottomsheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A77D92769C9E2006327D0 /* HomeSubBottomsheet.storyboard */; };
+		A53A77DC2769C9FC006327D0 /* HomeSubBottomsheetVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77DB2769C9FC006327D0 /* HomeSubBottomsheetVC.swift */; };
+		A53A77DF2769D4FC006327D0 /* SelfPaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77DE2769D4FC006327D0 /* SelfPaymentViewController.swift */; };
+		A53A77E12769D50A006327D0 /* payment.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A77E02769D50A006327D0 /* payment.storyboard */; };
+		A53A77E5276A31F4006327D0 /* AddressRegisterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77E4276A31F4006327D0 /* AddressRegisterResponse.swift */; };
+		A53A77E7276A3249006327D0 /* AddressRegisterInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77E6276A3249006327D0 /* AddressRegisterInfo.swift */; };
+		A53A77E9276A33AA006327D0 /* AddressRegisterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77E8276A33AA006327D0 /* AddressRegisterDataManager.swift */; };
+		A53A77EB276A6FAE006327D0 /* DeliveryRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77EA276A6FAE006327D0 /* DeliveryRegisterVC.swift */; };
+		A53A77ED276A7138006327D0 /* DeliveryTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77EC276A7138006327D0 /* DeliveryTableVC.swift */; };
+		A53A77EF276A7D5B006327D0 /* myDeliveryLocationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77EE276A7D5B006327D0 /* myDeliveryLocationTableViewCell.swift */; };
+		A53A77F2276A8240006327D0 /* AllAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77F1276A8240006327D0 /* AllAddressResponse.swift */; };
+		A53A77F4276A838A006327D0 /* AllAddressRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53A77F3276A838A006327D0 /* AllAddressRequest.swift */; };
+		A53FF2E6276B1CEF0004BF19 /* MyViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2E5276B1CEF0004BF19 /* MyViewMenuCell.swift */; };
+		A53FF2E8276B1D430004BF19 /* MyViewMenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53FF2E7276B1D430004BF19 /* MyViewMenuCell.xib */; };
+		A53FF2EA276B1EED0004BF19 /* MyViewFocusView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A53FF2E9276B1EED0004BF19 /* MyViewFocusView.xib */; };
+		A53FF2ED276B26790004BF19 /* OnSaleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2EC276B26790004BF19 /* OnSaleVC.swift */; };
+		A53FF2EF276B26950004BF19 /* ReservingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2EE276B26950004BF19 /* ReservingVC.swift */; };
+		A53FF2F1276B26AF0004BF19 /* SoldOutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2F0276B26AF0004BF19 /* SoldOutVC.swift */; };
+		A53FF2F3276B26C50004BF19 /* MyViewSub.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53FF2F2276B26C50004BF19 /* MyViewSub.storyboard */; };
+		A53FF2F6276B6AE30004BF19 /* PaymentResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2F5276B6AE30004BF19 /* PaymentResponse.swift */; };
+		A53FF2F8276B6F270004BF19 /* PaymentInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2F7276B6F270004BF19 /* PaymentInfo.swift */; };
+		A53FF2FA276B6FEB0004BF19 /* PaymentDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2F9276B6FEB0004BF19 /* PaymentDataManager.swift */; };
+		A53FF2FC276BC51E0004BF19 /* GoodsRegisterDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF2FB276BC51E0004BF19 /* GoodsRegisterDataManager.swift */; };
+		A53FF301276BD3B90004BF19 /* SubCategoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF300276BD3B90004BF19 /* SubCategoryResponse.swift */; };
+		A53FF303276BD7600004BF19 /* SubCategoryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF302276BD7600004BF19 /* SubCategoryRequest.swift */; };
+		A53FF305276BD9990004BF19 /* SubCategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF304276BD9990004BF19 /* SubCategoryVC.swift */; };
+		A53FF307276BD9AD0004BF19 /* SubCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53FF306276BD9AD0004BF19 /* SubCategory.storyboard */; };
+		A53FF309276BE2910004BF19 /* SubCagoeryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A53FF308276BE2910004BF19 /* SubCagoeryCollectionViewCell.swift */; };
 		A54236F427609333008AEF66 /* GoodCategory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A54236F327609333008AEF66 /* GoodCategory.storyboard */; };
 		A54236F627609360008AEF66 /* GoodCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54236F527609360008AEF66 /* GoodCategoryViewController.swift */; };
 		A54236FA2760AE8B008AEF66 /* HomeNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54236F92760AE8B008AEF66 /* HomeNavigationViewController.swift */; };
@@ -136,8 +171,6 @@
 		A53A77A027670F54006327D0 /* MySetting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MySetting.storyboard; sourceTree = "<group>"; };
 		A53A77A227672956006327D0 /* DeliveryLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DeliveryLocation.storyboard; sourceTree = "<group>"; };
 		A53A77A42767296A006327D0 /* DeliveryLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryLocationViewController.swift; sourceTree = "<group>"; };
-		A53A77A627672E08006327D0 /* ClickVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickVC.swift; sourceTree = "<group>"; };
-		A53A77A827672E2A006327D0 /* DeliveryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryVC.swift; sourceTree = "<group>"; };
 		A53A77AA27673264006327D0 /* DeliveryAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryAddViewController.swift; sourceTree = "<group>"; };
 		A53A77AD27674153006327D0 /* RequestBottomsheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestBottomsheetViewController.swift; sourceTree = "<group>"; };
 		A53A77AF27674164006327D0 /* RequestBottomsheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestBottomsheet.storyboard; sourceTree = "<group>"; };
@@ -145,6 +178,43 @@
 		A53A77B4276747B3006327D0 /* ExchangePolicyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangePolicyVC.swift; sourceTree = "<group>"; };
 		A53A77B62767482E006327D0 /* PrecationsBottomsheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrecationsBottomsheetVC.swift; sourceTree = "<group>"; };
 		A53A77B8276748CA006327D0 /* StoreSettingBS.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StoreSettingBS.storyboard; sourceTree = "<group>"; };
+		A53A77BD2767B9ED006327D0 /* UserCorrectionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCorrectionResponse.swift; sourceTree = "<group>"; };
+		A53A77BF2767BA0D006327D0 /* UserCorrectionInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCorrectionInfo.swift; sourceTree = "<group>"; };
+		A53A77C12767BC1A006327D0 /* UserCorrectionDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCorrectionDataManager.swift; sourceTree = "<group>"; };
+		A53A77C827687543006327D0 /* goodRequestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = goodRequestCollectionViewCell.swift; sourceTree = "<group>"; };
+		A53A77CA2768779B006327D0 /* GoodsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsResponse.swift; sourceTree = "<group>"; };
+		A53A77CC27687C58006327D0 /* GoodsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsRequest.swift; sourceTree = "<group>"; };
+		A53A77D127689D9C006327D0 /* DetailGoodsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoodsViewController.swift; sourceTree = "<group>"; };
+		A53A77D427690D3D006327D0 /* DetailGoodsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoodsResponse.swift; sourceTree = "<group>"; };
+		A53A77D627690EC7006327D0 /* DetailGoodsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailGoodsRequest.swift; sourceTree = "<group>"; };
+		A53A77D92769C9E2006327D0 /* HomeSubBottomsheet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeSubBottomsheet.storyboard; sourceTree = "<group>"; };
+		A53A77DB2769C9FC006327D0 /* HomeSubBottomsheetVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSubBottomsheetVC.swift; sourceTree = "<group>"; };
+		A53A77DE2769D4FC006327D0 /* SelfPaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfPaymentViewController.swift; sourceTree = "<group>"; };
+		A53A77E02769D50A006327D0 /* payment.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = payment.storyboard; sourceTree = "<group>"; };
+		A53A77E4276A31F4006327D0 /* AddressRegisterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRegisterResponse.swift; sourceTree = "<group>"; };
+		A53A77E6276A3249006327D0 /* AddressRegisterInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRegisterInfo.swift; sourceTree = "<group>"; };
+		A53A77E8276A33AA006327D0 /* AddressRegisterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressRegisterDataManager.swift; sourceTree = "<group>"; };
+		A53A77EA276A6FAE006327D0 /* DeliveryRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryRegisterVC.swift; sourceTree = "<group>"; };
+		A53A77EC276A7138006327D0 /* DeliveryTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeliveryTableVC.swift; sourceTree = "<group>"; };
+		A53A77EE276A7D5B006327D0 /* myDeliveryLocationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myDeliveryLocationTableViewCell.swift; sourceTree = "<group>"; };
+		A53A77F1276A8240006327D0 /* AllAddressResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAddressResponse.swift; sourceTree = "<group>"; };
+		A53A77F3276A838A006327D0 /* AllAddressRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllAddressRequest.swift; sourceTree = "<group>"; };
+		A53FF2E5276B1CEF0004BF19 /* MyViewMenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewMenuCell.swift; sourceTree = "<group>"; };
+		A53FF2E7276B1D430004BF19 /* MyViewMenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewMenuCell.xib; sourceTree = "<group>"; };
+		A53FF2E9276B1EED0004BF19 /* MyViewFocusView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyViewFocusView.xib; sourceTree = "<group>"; };
+		A53FF2EC276B26790004BF19 /* OnSaleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnSaleVC.swift; sourceTree = "<group>"; };
+		A53FF2EE276B26950004BF19 /* ReservingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservingVC.swift; sourceTree = "<group>"; };
+		A53FF2F0276B26AF0004BF19 /* SoldOutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoldOutVC.swift; sourceTree = "<group>"; };
+		A53FF2F2276B26C50004BF19 /* MyViewSub.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyViewSub.storyboard; sourceTree = "<group>"; };
+		A53FF2F5276B6AE30004BF19 /* PaymentResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentResponse.swift; sourceTree = "<group>"; };
+		A53FF2F7276B6F270004BF19 /* PaymentInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentInfo.swift; sourceTree = "<group>"; };
+		A53FF2F9276B6FEB0004BF19 /* PaymentDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentDataManager.swift; sourceTree = "<group>"; };
+		A53FF2FB276BC51E0004BF19 /* GoodsRegisterDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodsRegisterDataManager.swift; sourceTree = "<group>"; };
+		A53FF300276BD3B90004BF19 /* SubCategoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryResponse.swift; sourceTree = "<group>"; };
+		A53FF302276BD7600004BF19 /* SubCategoryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryRequest.swift; sourceTree = "<group>"; };
+		A53FF304276BD9990004BF19 /* SubCategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCategoryVC.swift; sourceTree = "<group>"; };
+		A53FF306276BD9AD0004BF19 /* SubCategory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SubCategory.storyboard; sourceTree = "<group>"; };
+		A53FF308276BE2910004BF19 /* SubCagoeryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCagoeryCollectionViewCell.swift; sourceTree = "<group>"; };
 		A54236F327609333008AEF66 /* GoodCategory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoodCategory.storyboard; sourceTree = "<group>"; };
 		A54236F527609360008AEF66 /* GoodCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoodCategoryViewController.swift; sourceTree = "<group>"; };
 		A54236F92760AE8B008AEF66 /* HomeNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationViewController.swift; sourceTree = "<group>"; };
@@ -274,6 +344,7 @@
 			children = (
 				A53A778327661C44006327D0 /* GoodsRegisterResponse.swift */,
 				A53A778527661D4A006327D0 /* GoodsRegisterUserInfo.swift */,
+				A53FF2FB276BC51E0004BF19 /* GoodsRegisterDataManager.swift */,
 			);
 			path = GoodsRegisterAPI;
 			sourceTree = "<group>";
@@ -281,13 +352,12 @@
 		A53A778727664CD7006327D0 /* StoreSetting */ = {
 			isa = PBXGroup;
 			children = (
+				A53A77BC2767B9A0006327D0 /* UserCorrectionAPI(4) */,
+				A53A77BB2767B95E006327D0 /* UserInquiryAPI(3) */,
+				A53A77BA2767B8FA006327D0 /* UpperStoreSettingBottomsheet */,
 				A53A77B12767473F006327D0 /* StoreSettingBottomsheet */,
-				A53A778827664D29006327D0 /* StoreSettingBottonsheetVC.swift */,
-				A53A778A27664D84006327D0 /* StoreSettingBottomsheet.storyboard */,
 				A53A778C2766508A006327D0 /* StoreSetting.storyboard */,
 				A53A778E2766509B006327D0 /* StoreSettingViewController.swift */,
-				A53A779027665A01006327D0 /* StoreSettingResponse.swift */,
-				A53A779227665C91006327D0 /* StoreSettingRequest.swift */,
 			);
 			path = StoreSetting;
 			sourceTree = "<group>";
@@ -306,14 +376,8 @@
 		A53A779D27670F36006327D0 /* mySetting */ = {
 			isa = PBXGroup;
 			children = (
-				A53A77AC2767412A006327D0 /* requestBottomsheet */,
-				A53A779E27670F49006327D0 /* MySettingViewController.swift */,
+				A53A77E2276A30D7006327D0 /* DeliveryLocation */,
 				A53A77A027670F54006327D0 /* MySetting.storyboard */,
-				A53A77A227672956006327D0 /* DeliveryLocation.storyboard */,
-				A53A77A42767296A006327D0 /* DeliveryLocationViewController.swift */,
-				A53A77A627672E08006327D0 /* ClickVC.swift */,
-				A53A77A827672E2A006327D0 /* DeliveryVC.swift */,
-				A53A77AA27673264006327D0 /* DeliveryAddViewController.swift */,
 			);
 			path = mySetting;
 			sourceTree = "<group>";
@@ -336,6 +400,159 @@
 				A53A77B8276748CA006327D0 /* StoreSettingBS.storyboard */,
 			);
 			path = StoreSettingBottomsheet;
+			sourceTree = "<group>";
+		};
+		A53A77BA2767B8FA006327D0 /* UpperStoreSettingBottomsheet */ = {
+			isa = PBXGroup;
+			children = (
+				A53A778827664D29006327D0 /* StoreSettingBottonsheetVC.swift */,
+				A53A778A27664D84006327D0 /* StoreSettingBottomsheet.storyboard */,
+			);
+			path = UpperStoreSettingBottomsheet;
+			sourceTree = "<group>";
+		};
+		A53A77BB2767B95E006327D0 /* UserInquiryAPI(3) */ = {
+			isa = PBXGroup;
+			children = (
+				A53A779027665A01006327D0 /* StoreSettingResponse.swift */,
+				A53A779227665C91006327D0 /* StoreSettingRequest.swift */,
+			);
+			path = "UserInquiryAPI(3)";
+			sourceTree = "<group>";
+		};
+		A53A77BC2767B9A0006327D0 /* UserCorrectionAPI(4) */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77BD2767B9ED006327D0 /* UserCorrectionResponse.swift */,
+				A53A77BF2767BA0D006327D0 /* UserCorrectionInfo.swift */,
+				A53A77C12767BC1A006327D0 /* UserCorrectionDataManager.swift */,
+			);
+			path = "UserCorrectionAPI(4)";
+			sourceTree = "<group>";
+		};
+		A53A77C3276873E6006327D0 /* GoodsRequestAPI(12) */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77CA2768779B006327D0 /* GoodsResponse.swift */,
+				A53A77CC27687C58006327D0 /* GoodsRequest.swift */,
+			);
+			path = "GoodsRequestAPI(12)";
+			sourceTree = "<group>";
+		};
+		A53A77D027689D80006327D0 /* DetailGoods(13) */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77D127689D9C006327D0 /* DetailGoodsViewController.swift */,
+				A53A77D427690D3D006327D0 /* DetailGoodsResponse.swift */,
+				A53A77D627690EC7006327D0 /* DetailGoodsRequest.swift */,
+			);
+			path = "DetailGoods(13)";
+			sourceTree = "<group>";
+		};
+		A53A77D3276905E0006327D0 /* HomeSub */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF4899275F609A00313D7E /* HomePaging.storyboard */,
+			);
+			path = HomeSub;
+			sourceTree = "<group>";
+		};
+		A53A77D82769C9C4006327D0 /* HomeSubBottomsheet */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77D92769C9E2006327D0 /* HomeSubBottomsheet.storyboard */,
+				A53A77DB2769C9FC006327D0 /* HomeSubBottomsheetVC.swift */,
+			);
+			path = HomeSubBottomsheet;
+			sourceTree = "<group>";
+		};
+		A53A77DD2769D4C1006327D0 /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				A53FF2F4276B6AB00004BF19 /* PaymentAPI(15) */,
+				A53A77DE2769D4FC006327D0 /* SelfPaymentViewController.swift */,
+				A53A77E02769D50A006327D0 /* payment.storyboard */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		A53A77E2276A30D7006327D0 /* DeliveryLocation */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77E3276A3102006327D0 /* API(5) */,
+				A53A77F0276A81D6006327D0 /* API(6) */,
+				A53A77EA276A6FAE006327D0 /* DeliveryRegisterVC.swift */,
+				A53A77EE276A7D5B006327D0 /* myDeliveryLocationTableViewCell.swift */,
+				A53A77EC276A7138006327D0 /* DeliveryTableVC.swift */,
+				A53A77A227672956006327D0 /* DeliveryLocation.storyboard */,
+				A53A77A42767296A006327D0 /* DeliveryLocationViewController.swift */,
+				A53A77AA27673264006327D0 /* DeliveryAddViewController.swift */,
+				A53A77AC2767412A006327D0 /* requestBottomsheet */,
+				A53A779E27670F49006327D0 /* MySettingViewController.swift */,
+			);
+			path = DeliveryLocation;
+			sourceTree = "<group>";
+		};
+		A53A77E3276A3102006327D0 /* API(5) */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77E4276A31F4006327D0 /* AddressRegisterResponse.swift */,
+				A53A77E6276A3249006327D0 /* AddressRegisterInfo.swift */,
+				A53A77E8276A33AA006327D0 /* AddressRegisterDataManager.swift */,
+			);
+			path = "API(5)";
+			sourceTree = "<group>";
+		};
+		A53A77F0276A81D6006327D0 /* API(6) */ = {
+			isa = PBXGroup;
+			children = (
+				A53A77F1276A8240006327D0 /* AllAddressResponse.swift */,
+				A53A77F3276A838A006327D0 /* AllAddressRequest.swift */,
+			);
+			path = "API(6)";
+			sourceTree = "<group>";
+		};
+		A53FF2E4276B1CC40004BF19 /* MyViewPaigng */ = {
+			isa = PBXGroup;
+			children = (
+				A53FF2E5276B1CEF0004BF19 /* MyViewMenuCell.swift */,
+				A53FF2E7276B1D430004BF19 /* MyViewMenuCell.xib */,
+				A53FF2E9276B1EED0004BF19 /* MyViewFocusView.xib */,
+			);
+			path = MyViewPaigng;
+			sourceTree = "<group>";
+		};
+		A53FF2EB276B26390004BF19 /* MyViewSub */ = {
+			isa = PBXGroup;
+			children = (
+				A53FF2EC276B26790004BF19 /* OnSaleVC.swift */,
+				A53FF2EE276B26950004BF19 /* ReservingVC.swift */,
+				A53FF2F0276B26AF0004BF19 /* SoldOutVC.swift */,
+				A53FF2F2276B26C50004BF19 /* MyViewSub.storyboard */,
+			);
+			path = MyViewSub;
+			sourceTree = "<group>";
+		};
+		A53FF2F4276B6AB00004BF19 /* PaymentAPI(15) */ = {
+			isa = PBXGroup;
+			children = (
+				A53FF2F5276B6AE30004BF19 /* PaymentResponse.swift */,
+				A53FF2F7276B6F270004BF19 /* PaymentInfo.swift */,
+				A53FF2F9276B6FEB0004BF19 /* PaymentDataManager.swift */,
+			);
+			path = "PaymentAPI(15)";
+			sourceTree = "<group>";
+		};
+		A53FF2FF276BD38B0004BF19 /* SubCategoryAPI(11) */ = {
+			isa = PBXGroup;
+			children = (
+				A53FF300276BD3B90004BF19 /* SubCategoryResponse.swift */,
+				A53FF302276BD7600004BF19 /* SubCategoryRequest.swift */,
+				A53FF304276BD9990004BF19 /* SubCategoryVC.swift */,
+				A53FF306276BD9AD0004BF19 /* SubCategory.storyboard */,
+				A53FF308276BE2910004BF19 /* SubCagoeryCollectionViewCell.swift */,
+			);
+			path = "SubCategoryAPI(11)";
 			sourceTree = "<group>";
 		};
 		A54236FD27611CCE008AEF66 /* Search */ = {
@@ -375,6 +592,7 @@
 		A5995633275D43AC00784103 /* SubMenu */ = {
 			isa = PBXGroup;
 			children = (
+				A53FF2FF276BD38B0004BF19 /* SubCategoryAPI(11) */,
 				A5995634275D43D300784103 /* CategoryViewController.swift */,
 				A5995636275D43DE00784103 /* BrandVIewController.swift */,
 				A5995638275D43E900784103 /* ServiceViewController.swift */,
@@ -401,7 +619,12 @@
 		A5CF488C275F536500313D7E /* HomePagingKit */ = {
 			isa = PBXGroup;
 			children = (
-				A5CF4899275F609A00313D7E /* HomePaging.storyboard */,
+				A53A77DD2769D4C1006327D0 /* Payment */,
+				A53A77D82769C9C4006327D0 /* HomeSubBottomsheet */,
+				A53A77D3276905E0006327D0 /* HomeSub */,
+				A53A77D027689D80006327D0 /* DetailGoods(13) */,
+				A53A77C3276873E6006327D0 /* GoodsRequestAPI(12) */,
+				A53A77C827687543006327D0 /* goodRequestCollectionViewCell.swift */,
 				A5CF488D275F537C00313D7E /* HomeRecomemedGoodsViewController.swift */,
 				A5CF488F275F53A100313D7E /* HomeBrandViewController.swift */,
 				A5CF4891275F54FB00313D7E /* HomeMenuCell.swift */,
@@ -568,6 +791,8 @@
 				A5ED9420275BCAA400D52BAF /* ContainerVIewController.swift */,
 				A5ED9422275BCD9200D52BAF /* TalkViewController.swift */,
 				A5ED9424275BCDA000D52BAF /* MyViewController.swift */,
+				A53FF2E4276B1CC40004BF19 /* MyViewPaigng */,
+				A53FF2EB276B26390004BF19 /* MyViewSub */,
 				A5ED9426275BE43300D52BAF /* BannerCell.swift */,
 			);
 			path = Home;
@@ -644,12 +869,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53FF2EA276B1EED0004BF19 /* MyViewFocusView.xib in Resources */,
 				A599563E275DF3DA00784103 /* goodsRegister.storyboard in Resources */,
 				A53A77772764FBF3006327D0 /* RelatedTag.storyboard in Resources */,
+				A53FF2E8276B1D430004BF19 /* MyViewMenuCell.xib in Resources */,
 				A53A77B9276748CA006327D0 /* StoreSettingBS.storyboard in Resources */,
+				A53A77DA2769C9E2006327D0 /* HomeSubBottomsheet.storyboard in Resources */,
 				A5CF489A275F609A00313D7E /* HomePaging.storyboard in Resources */,
 				A5ED942C275D078900D52BAF /* SelfSignIn.storyboard in Resources */,
 				A542370C2761EA60008AEF66 /* Location.storyboard in Resources */,
+				A53FF307276BD9AD0004BF19 /* SubCategory.storyboard in Resources */,
+				A53FF2F3276B26C50004BF19 /* MyViewSub.storyboard in Resources */,
 				A53A77682762733C006327D0 /* SelfLogin.storyboard in Resources */,
 				A5423704276129C1008AEF66 /* Search.storyboard in Resources */,
 				A53A777A276531D9006327D0 /* threeOption.storyboard in Resources */,
@@ -664,6 +894,7 @@
 				A5ED93FA275B66A600D52BAF /* bottomsheet.storyboard in Resources */,
 				A54236F427609333008AEF66 /* GoodCategory.storyboard in Resources */,
 				A53A77B027674164006327D0 /* RequestBottomsheet.storyboard in Resources */,
+				A53A77E12769D50A006327D0 /* payment.storyboard in Resources */,
 				A5ED93D3275B567F00D52BAF /* SplashStoryboard.storyboard in Resources */,
 				A5995632275D3D6000784103 /* FocusView.xib in Resources */,
 				A5ED93C6275B531F00D52BAF /* Main.storyboard in Resources */,
@@ -725,37 +956,57 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5ED93DA275B58CA00D52BAF /* BaseViewController.swift in Sources */,
-				A53A77A927672E2A006327D0 /* DeliveryVC.swift in Sources */,
+				A53FF303276BD7600004BF19 /* SubCategoryRequest.swift in Sources */,
 				A5423710276234CB008AEF66 /* SelfSignInDataManager.swift in Sources */,
+				A53FF2EF276B26950004BF19 /* ReservingVC.swift in Sources */,
+				A53FF2FC276BC51E0004BF19 /* GoodsRegisterDataManager.swift in Sources */,
 				A54236F627609360008AEF66 /* GoodCategoryViewController.swift in Sources */,
 				A53A77B327674793006327D0 /* StoreIntroBottomsheetVC.swift in Sources */,
 				A53A779127665A01006327D0 /* StoreSettingResponse.swift in Sources */,
+				A53FF301276BD3B90004BF19 /* SubCategoryResponse.swift in Sources */,
+				A53A77EB276A6FAE006327D0 /* DeliveryRegisterVC.swift in Sources */,
+				A53FF2F6276B6AE30004BF19 /* PaymentResponse.swift in Sources */,
+				A53A77CB2768779B006327D0 /* GoodsResponse.swift in Sources */,
 				A53A776A276273DE006327D0 /* SelfLoginResponse.swift in Sources */,
 				A53A77AB27673264006327D0 /* DeliveryAddViewController.swift in Sources */,
 				A53A776C27627654006327D0 /* SelfSignInResponse.swift in Sources */,
 				A5ED93C3275B531F00D52BAF /* ViewController.swift in Sources */,
+				A53FF309276BE2910004BF19 /* SubCagoeryCollectionViewCell.swift in Sources */,
 				A5ED93BF275B531F00D52BAF /* AppDelegate.swift in Sources */,
+				A53A77BE2767B9EE006327D0 /* UserCorrectionResponse.swift in Sources */,
+				A53A77C02767BA0D006327D0 /* UserCorrectionInfo.swift in Sources */,
 				A5ED93EA275B5CAD00D52BAF /* Color.swift in Sources */,
 				A53A77AE27674153006327D0 /* RequestBottomsheetViewController.swift in Sources */,
 				A53A778F2766509B006327D0 /* StoreSettingViewController.swift in Sources */,
 				A5CF488E275F537C00313D7E /* HomeRecomemedGoodsViewController.swift in Sources */,
 				A53A77752764FBE9006327D0 /* RelatedTagViewController.swift in Sources */,
+				A53A77D727690EC7006327D0 /* DetailGoodsRequest.swift in Sources */,
 				A5ED93F5275B5DE400D52BAF /* IndicatorView.swift in Sources */,
 				A5423706276129CD008AEF66 /* SearchViewController.swift in Sources */,
 				A5ED9421275BCAA400D52BAF /* ContainerVIewController.swift in Sources */,
 				A5CF4890275F53A100313D7E /* HomeBrandViewController.swift in Sources */,
 				A53A778927664D29006327D0 /* StoreSettingBottonsheetVC.swift in Sources */,
 				A542370A276131CD008AEF66 /* LocationRequest.swift in Sources */,
+				A53A77EF276A7D5B006327D0 /* myDeliveryLocationTableViewCell.swift in Sources */,
 				A5ED942A275D077E00D52BAF /* SelfSignInViewController.swift in Sources */,
 				A54236FC2760D118008AEF66 /* SubGoodsCategoryViewController.swift in Sources */,
 				A53A779627667668006327D0 /* BellViewController.swift in Sources */,
+				A53A77E5276A31F4006327D0 /* AddressRegisterResponse.swift in Sources */,
+				A53FF2E6276B1CEF0004BF19 /* MyViewMenuCell.swift in Sources */,
+				A53FF2FA276B6FEB0004BF19 /* PaymentDataManager.swift in Sources */,
 				A5ED941F275BC3F000D52BAF /* HomeViewController.swift in Sources */,
+				A53A77ED276A7138006327D0 /* DeliveryTableVC.swift in Sources */,
 				A5ED93E8275B5CA700D52BAF /* String.swift in Sources */,
+				A53A77F4276A838A006327D0 /* AllAddressRequest.swift in Sources */,
 				A53A777227649C4A006327D0 /* LocationTableViewCell.swift in Sources */,
 				A542370827612BD9008AEF66 /* LocationResponse.swift in Sources */,
 				A53A77A52767296A006327D0 /* DeliveryLocationViewController.swift in Sources */,
+				A53A77C22767BC1A006327D0 /* UserCorrectionDataManager.swift in Sources */,
+				A53A77D527690D3D006327D0 /* DetailGoodsResponse.swift in Sources */,
+				A53FF2ED276B26790004BF19 /* OnSaleVC.swift in Sources */,
 				A5CF489F275F97C500313D7E /* GoodsExplanViewController.swift in Sources */,
 				A5CF4892275F54FB00313D7E /* HomeMenuCell.swift in Sources */,
+				A53A77CD27687C58006327D0 /* GoodsRequest.swift in Sources */,
 				A5ED93FC275B70F200D52BAF /* BottomSheetVC.swift in Sources */,
 				A5995635275D43D300784103 /* CategoryViewController.swift in Sources */,
 				A5ED93E6275B5C9A00D52BAF /* Date.swift in Sources */,
@@ -765,13 +1016,15 @@
 				A53A779327665C91006327D0 /* StoreSettingRequest.swift in Sources */,
 				A5ED93EC275B5CB500D52BAF /* UIFont.swift in Sources */,
 				A5ED93F0275B5CC600D52BAF /* UIViewController.swift in Sources */,
+				A53A77DF2769D4FC006327D0 /* SelfPaymentViewController.swift in Sources */,
 				A5995637275D43DE00784103 /* BrandVIewController.swift in Sources */,
+				A53A77F2276A8240006327D0 /* AllAddressResponse.swift in Sources */,
 				A53A7763276265AA006327D0 /* SelfSignInUserInfo.swift in Sources */,
 				A5995639275D43E900784103 /* ServiceViewController.swift in Sources */,
+				A53A77C927687543006327D0 /* goodRequestCollectionViewCell.swift in Sources */,
 				A53A779F27670F49006327D0 /* MySettingViewController.swift in Sources */,
 				A53A779C27667E4D006327D0 /* KeywordAlarmVC.swift in Sources */,
 				A53A778627661D4A006327D0 /* GoodsRegisterUserInfo.swift in Sources */,
-				A53A77A727672E08006327D0 /* ClickVC.swift in Sources */,
 				A53A77B5276747B3006327D0 /* ExchangePolicyVC.swift in Sources */,
 				A5ED93C1275B531F00D52BAF /* SceneDelegate.swift in Sources */,
 				A54236FF27611CFC008AEF66 /* LocationViewController.swift in Sources */,
@@ -779,15 +1032,22 @@
 				A53A776E27627DB2006327D0 /* SelfLoginUserInfo.swift in Sources */,
 				A5ED9423275BCD9200D52BAF /* TalkViewController.swift in Sources */,
 				A5ED93D5275B577700D52BAF /* SplashViewController.swift in Sources */,
+				A53FF2F1276B26AF0004BF19 /* SoldOutVC.swift in Sources */,
 				A5ED93DC275B5B7B00D52BAF /* Constant.swift in Sources */,
 				A53A778427661C44006327D0 /* GoodsRegisterResponse.swift in Sources */,
+				A53FF305276BD9990004BF19 /* SubCategoryVC.swift in Sources */,
+				A53FF2F8276B6F270004BF19 /* PaymentInfo.swift in Sources */,
 				A54236FA2760AE8B008AEF66 /* HomeNavigationViewController.swift in Sources */,
 				A5ED93F2275B5CD100D52BAF /* UINavigationBar.swift in Sources */,
 				A53A77B72767482E006327D0 /* PrecationsBottomsheetVC.swift in Sources */,
 				A53A77662762732C006327D0 /* SelfLoginViewController.swift in Sources */,
+				A53A77D227689D9C006327D0 /* DetailGoodsViewController.swift in Sources */,
+				A53A77E9276A33AA006327D0 /* AddressRegisterDataManager.swift in Sources */,
 				A5995640275DF3EA00784103 /* GoodsRegisterViewController.swift in Sources */,
 				A599562E275D3C9A00784103 /* MenuCell.swift in Sources */,
 				A53A779A27667E3C006327D0 /* NewInfoVC.swift in Sources */,
+				A53A77E7276A3249006327D0 /* AddressRegisterInfo.swift in Sources */,
+				A53A77DC2769C9FC006327D0 /* HomeSubBottomsheetVC.swift in Sources */,
 				A5ED93E0275B5BD400D52BAF /* KobisKey.swift in Sources */,
 				A5ED93EE275B5CBC00D52BAF /* UIButton.swift in Sources */,
 				A53A777C276531EC006327D0 /* threeOptionViewController.swift in Sources */,

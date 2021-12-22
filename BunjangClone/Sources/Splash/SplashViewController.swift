@@ -13,6 +13,7 @@ class SplashViewController: BaseViewController, UIScrollViewDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var toEmailLoginButton: UIButton!
+    @IBOutlet weak var kakaoButton: UIButton!
     
     
     var images = [ #imageLiteral(resourceName: "splashImg3"), #imageLiteral(resourceName: "splashImg4"), #imageLiteral(resourceName: "splashImg1"), #imageLiteral(resourceName: "splashImg2") ]
@@ -28,6 +29,7 @@ class SplashViewController: BaseViewController, UIScrollViewDelegate {
         toEmailLoginButton.layer.cornerRadius = 35
         toEmailLoginButton.layer.borderWidth = 1
         toEmailLoginButton.layer.borderColor = UIColor.black.cgColor
+        kakaoButton.layer.cornerRadius = 35
         
         
     }
@@ -35,6 +37,9 @@ class SplashViewController: BaseViewController, UIScrollViewDelegate {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         //자동로그인
+//        var myJWToken : String = ""
+//        myJWToken = UserDefaults.standard.value(forKey: "myJWToken") as? String ?? ""
+//        print(myJWToken)
         if UserDefaults.standard.bool(forKey: "login_save") == true {
         let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
         guard let homeNavigationVC = mainStoryboard.instantiateViewController(identifier: "HomeNavigationViewController") as? HomeNavigationViewController else { return }

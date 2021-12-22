@@ -13,4 +13,5 @@ pod 'TweeTextField'
 pod 'TagListView', '~> 1.0'
 pod 'SnapKit', '~> 5.0.0'
 pod "PagingKit"
+  pod 'Kingfisher', '~> 7.0'
 end

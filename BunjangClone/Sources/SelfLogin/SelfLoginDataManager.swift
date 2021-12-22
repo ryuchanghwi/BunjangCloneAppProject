@@ -26,8 +26,11 @@ class SelfLoginDataManager {
                     print("DEBUG >> Success \(response)")
                     LoginResponse.ResponseState = response.isSuccess!
                     LoginResponse.myUserIdx = response.result?.userIdx ?? 0
+                    LoginResponse.myJWT = response.result?.jwt ?? ""
                     UserDefaults.standard.set(LoginResponse.myUserIdx, forKey: "myIdx")
+                    UserDefaults.standard.set(LoginResponse.myJWT, forKey: "myJWT")
                     print(LoginResponse.myUserIdx, "나의 UserIdx값")
+                    
                 case .failure(let error):
                     print(error.localizedDescription)
                 }

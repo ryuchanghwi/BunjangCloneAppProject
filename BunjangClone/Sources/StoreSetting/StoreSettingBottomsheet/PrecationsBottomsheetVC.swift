@@ -9,11 +9,11 @@ import Foundation
 import UIKit
 import PanModal
 
-class PrecationsBottomsheetVC : UIViewController, UITextViewDelegate {
-//    func precautionChange() {
-//        <#code#>
-//    }
-//
+class PrecationsBottomsheetVC : UIViewController, UITextViewDelegate, precautionsChangeDelegate {
+    func precautionChange() {
+        storeSettingVC?.beforeBuyLabel.text = PrecautionTextView.text
+    }
+
     var storeSettingVC : StoreSettingViewController?
     
     
@@ -49,11 +49,16 @@ class PrecationsBottomsheetVC : UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         placeholerSetting()
-//        storeSettingVC?.precautionsDelegate = self
+        storeSettingVC?.precautionsDelegate = self
     }
     
     
     //MARK: - Actions
+    @IBAction func okayBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        precautionChange()
+    }
+    
     
 }
 

@@ -8,10 +8,10 @@
 import Foundation
 import UIKit
 import PanModal
-class ExchangePolicyVC : UIViewController, UITextViewDelegate  {
-//    func exchangePolicyChange() {
-//        <#code#>
-//    }
+class ExchangePolicyVC : UIViewController, UITextViewDelegate, exchangePolicyChangeDelegate  {
+    func exchangePolicyChange() {
+        storeSettingVC?.exchangePolicyLabel.text = ExchangePoliyTextView.text
+    }
     
     
     var storeSettingVC : StoreSettingViewController?
@@ -25,8 +25,16 @@ class ExchangePolicyVC : UIViewController, UITextViewDelegate  {
     override func viewDidLoad() {
         super.viewDidLoad()
         placeholerSetting()
-//        storeSettingVC?.exchangePoliyDelegate = self
+        storeSettingVC?.exchangePoliyDelegate = self
     }
+    
+    //MARK: - Actions
+    @IBAction func okayBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+        exchangePolicyChange()
+    }
+    
+    
     
     
     func placeholerSetting() {

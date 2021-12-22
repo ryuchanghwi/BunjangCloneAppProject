@@ -86,8 +86,7 @@ class threeOptionViewController : BaseViewController, threeOptionDelegate, UITex
     @IBAction func backBtn(_ sender: Any) {
         navigationController?.popViewController(animated: true)
         changeOptionLabel()
-        print(goodRegisterVC?.goodsConditions)
-        print(goodRegisterVC?.goodsExchange)
+
         
     }
     

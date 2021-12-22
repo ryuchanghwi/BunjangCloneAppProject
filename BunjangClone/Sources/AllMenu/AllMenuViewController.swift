@@ -25,7 +25,6 @@ class AllMenuViewController: BaseViewController {
             return vc
         }
         
-//        var dataSource = [(menuTitle: "test1", vc: viewController(.red)), (menuTitle: "test2", vc: viewController(.blue)), (menuTitle: "test3", vc: viewController(.yellow))]
     var dataSource = [(menu: String, content: BaseViewController)]() {
         didSet {
             menuViewController.reloadData()

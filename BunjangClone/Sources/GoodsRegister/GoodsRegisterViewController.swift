@@ -80,7 +80,6 @@ class GoodsRegisterViewController: BaseViewController, UIScrollViewDelegate {
         galleryButton.layer.borderColor = UIColor.lightGray.cgColor
         
         //API 체크
-        
     }
     
     
@@ -103,14 +102,7 @@ class GoodsRegisterViewController: BaseViewController, UIScrollViewDelegate {
     }
     
     @IBAction func safePayBtn(_ sender: UIButton) {
-//        if sender.isSelected {
-//            safePaywelcomeView.tintColor = #colorLiteral(red: 1, green: 0.4078431373, blue: 0.4078431373, alpha: 1)
-//        }
-//        else if !sender.isSelected {
-//            safePaywelcomeView.tintColor = UIColor.lightGray
-//        }
-//
-//        print("safepayBtn clicked")
+
     }
     
     
@@ -157,6 +149,20 @@ class GoodsRegisterViewController: BaseViewController, UIScrollViewDelegate {
         self.navigationController?.pushViewController(threeOptionVC, animated: true)
         threeOptionVC.goodRegisterVC = self
     }
+    
+    
+    @IBAction func registerOkayBtn(_ sender: Any) {
+        
+//        GoodsRegisterUserInfo.
+        
+        
+        
+        //
+    }
+    
+    
+    
+    
     
     
     

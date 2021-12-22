@@ -6,19 +6,29 @@
 //
 
 import Foundation
-//
-//struct GoodsRegisterUserInfo {
-//    static var productName: String = ""
-//    static var subcategoryIdx: Int = 0 // ??
-//    static var content: String = ""
-//    static var price: Int = 0
-//    static var freeShipping: String = ""
-//    static var negotiable: String = ""
-//    static var areaIdx : Int = 1 //거래지역 idx
-//    static var quantity: Int = 1 //수량
-//    static var changes: String = ""
-//    static var imgList: [imgList = <#initializer#>]
-//}
-//struct imgList {
-//     var imgUrl : String = ""
-//}
+
+    // MARK: - Welcome
+    struct GoodsRegisterUserInfo: Encodable {
+        var productName: String
+        var subcategoryIdx: Int
+        var content: String
+        var prices: Int
+        var freeShipping, negotiable: String
+        var quantity: Int
+        var conditions, changes: String
+
+        var imgList: [ImgList]?
+        var tagList: [TagList]?
+    }
+
+    // MARK: - ImgList
+    struct ImgList: Encodable {
+        var imgURL: String?
+
+
+    }
+
+    // MARK: - TagList
+    struct TagList: Encodable {
+        var tagName: String?
+    }

@@ -32,7 +32,6 @@ class HomeViewController: BaseViewController {
           return vc
       }
       
-//      var dataSource = [(menuTitle: "test1", vc: viewController(.red)), (menuTitle: "test2", vc: viewController(.blue)), (menuTitle: "test3", vc: viewController(.yellow))]
     var dataSource = [(menu: String, content: BaseViewController)]() {
         didSet {
             HomeMenuViewController.reloadData()
@@ -143,13 +142,11 @@ class HomeViewController: BaseViewController {
             
         }
         
-//        print(homeScrollView.contentOffset.y)
         var offset = homeScrollView.contentOffset.y / 100
 
         if offset > 1 {
             offset = 1
             upperView.backgroundColor = UIColor(red: 1, green: 1, blue: 1, alpha: offset)
-//            menuBtn.setImage(UIImage(named: "menuIconImg.png"), for: .normal)
             menuBtn.setImage(UIImage(named: "menuIconImg.png"), for: .normal)
             searchBtn.setImage(UIImage(named: "searchIconImg"), for: .normal)
             bellBtn.setImage(UIImage(named: "bellIconImg"), for: .normal)
@@ -159,7 +156,6 @@ class HomeViewController: BaseViewController {
             menuBtn.setImage(UIImage(named: "menuW"), for: .normal)
             searchBtn.setImage(UIImage(named: "searchW"), for: .normal)
             bellBtn.setImage(UIImage(named: "bellW"), for: .normal)
-//            menuBtn.setImage(UIImage(named: "menuIconImg.png"), for: .normal)
         }
     }
 }

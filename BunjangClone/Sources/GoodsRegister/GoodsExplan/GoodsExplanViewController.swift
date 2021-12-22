@@ -64,10 +64,7 @@ class GoodsExplanViewController: BaseViewController, UITextViewDelegate, goodsEx
     }
     
     @IBAction func saveTextViewBtn(_ sender: Any) {
-//        let goodsRegisterVC = UIStoryboard.init(name: "goodsRegister", bundle: nil)
-//        guard let goodsExplanVC = goodsExplanStoryboard.instantiateViewController(identifier: "GoodsExplanViewController") as? GoodsExplanViewController else { return }
-//        goodsExplanVC.modalPresentationStyle = .fullScreen
-//        present(goodsExplanVC, animated: true, completion: nil)
+
         saveGoodsExplaneTextView()
         dismiss(animated: true, completion: nil)
     }

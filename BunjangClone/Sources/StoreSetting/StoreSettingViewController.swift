@@ -32,6 +32,13 @@ class StoreSettingViewController: BaseViewController, UITextFieldDelegate {
     @IBOutlet weak var storeNameTextField: UITextField!
     @IBOutlet weak var storeAddressTextField: UITextField!
     @IBOutlet weak var variableTImeTextField: UITextField!
+    @IBOutlet weak var storeIntroButton: UIButton!
+    @IBOutlet weak var exchagePolicyButton: UIButton!
+    @IBOutlet weak var beforeBuyButton: UIButton!
+    @IBOutlet weak var storeIntroLabel: UILabel!
+    @IBOutlet weak var exchangePolicyLabel: UILabel!
+    @IBOutlet weak var beforeBuyLabel: UILabel!
+    
     
     var mySettingIdx : Int = 0
     let picker = UIImagePickerController()
@@ -44,6 +51,10 @@ class StoreSettingViewController: BaseViewController, UITextFieldDelegate {
         storeAddressTextField.delegate = self
         variableTImeTextField.delegate = self
         mySettingIdx = UserDefaults.standard.value(forKey: "myIdx") as? Int ?? 0
+        
+        
+        profileImgView.layer.cornerRadius = profileImgView.frame.width / 2
+        profileImgView.clipsToBounds = true
         //API
         StoreSettingRequest().getStoreSettingData(IdxVaule: mySettingIdx, self)
         
@@ -69,16 +80,31 @@ class StoreSettingViewController: BaseViewController, UITextFieldDelegate {
     
     @IBAction func StoreIntroBtn(_ sender: Any) {
         let storeIntroVC = UIStoryboard(name: "StoreSettingBS", bundle: nil).instantiateViewController(withIdentifier: "StoreIntroBottomsheetVC") as! StoreIntroBottomsheetVC
+        storeIntroVC.storeSettingVC = self
         presentPanModal(storeIntroVC)
+        
     }
     @IBAction func exchangePolicyBtn(_ sender: Any) {
         let exchangePolicyVC = UIStoryboard(name: "StoreSettingBS", bundle: nil).instantiateViewController(withIdentifier: "ExchangePolicyVC") as! ExchangePolicyVC
+        exchangePolicyVC.storeSettingVC = self
         presentPanModal(exchangePolicyVC)
     }
     @IBAction func beforeBuyBtn(_ sender: Any) {
         let precautionsVC = UIStoryboard(name: "StoreSettingBS", bundle: nil).instantiateViewController(withIdentifier: "PrecationsBottomsheetVC") as! PrecationsBottomsheetVC
+        precautionsVC.storeSettingVC = self
         presentPanModal(precautionsVC)
     }
+    @IBAction func checkBtn(_ sender: Any) {
+//        UserCorrectionInfo.profiles = 이미지
+        UserCorrectionInfo.storename = storeNameTextField.text!
+        UserCorrectionInfo.storeAddress = storeAddressTextField.text!
+        UserCorrectionInfo.contactableTime = variableTImeTextField.text!
+        UserCorrectionInfo.storeIntro = storeIntroLabel.text!
+        UserCorrectionInfo.tradePolicy = exchangePolicyLabel.text!
+        UserCorrectionInfo.flag = beforeBuyLabel.text!
+        UserCorrectionDataManager().userCorrectionPatchData(IdxValue: mySettingIdx, self)
+    }
+    
     
     
     
@@ -93,8 +119,23 @@ extension StoreSettingViewController {
         let myStoreAddress = response.result?.storeAddress
         self.storeAddressTextField.text = myStoreAddress
         
-        profileImgView.layer.cornerRadius = profileImgView.frame.width / 2
-        profileImgView.clipsToBounds = true
+        let ableTime = response.result?.contactableTime
+        self.variableTImeTextField.text = ableTime
+        
+        let store = response.result?.storeIntro
+        self.storeIntroLabel.text = store
+        
+        let trade = response.result?.tradePolicy
+        self.exchangePolicyLabel.text = trade
+        
+        let beforeBuy = response.result?.flag
+        self.beforeBuyLabel.text = beforeBuy
+        
+        
+        
+        
+//        profileImgView.layer.cornerRadius = profileImgView.frame.width / 2
+//        profileImgView.clipsToBounds = true
         
         
     }

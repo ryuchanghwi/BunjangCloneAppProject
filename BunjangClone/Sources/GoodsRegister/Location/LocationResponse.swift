@@ -23,7 +23,7 @@ import Alamofire
         var category: String?
         var description: String?
         var telephone: String?
-        var address: String? //이것만 사용
+        var address: String? 
         var roadAddress: String?
         var mapx: String?
         var mapy: String?

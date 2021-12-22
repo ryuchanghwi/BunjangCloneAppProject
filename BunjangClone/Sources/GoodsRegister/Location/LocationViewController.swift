@@ -39,9 +39,7 @@ class LocationViewController: BaseViewController {
         GoodsRegisterVC?.changeLocationLabeldelegate = self
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        <#code#>
-//    } //쓸지말지 고민
+
     
     
     

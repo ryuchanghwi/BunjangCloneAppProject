@@ -34,22 +34,27 @@ class SelfLoginViewController: BaseViewController, UITextFieldDelegate {
     //MARK: - Actions
     @IBAction func selfLogInBtn(_ sender: Any) {
         //API
-        SelfLoginUserInfo.loginEmail = selfLoginIDTextField.text!
-        SelfLoginUserInfo.loginPassword = selfLoginPasswordTextField.text!
-        SelfLoginDataManager().LoginPostData()
-        //데이터 저장
-        
-//        다음 화면 전환
-        if LoginResponse.ResponseState == true {
-            UserDefaults.standard.set(true, forKey: "login_save")
-            let mainStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
-            guard let homeNavigationVC = mainStoryboard.instantiateViewController(identifier: "HomeNavigationViewController") as? HomeNavigationViewController else { return }
-            homeNavigationVC.modalPresentationStyle = .fullScreen
-            present(homeNavigationVC, animated: true, completion: nil)
-        } else if LoginResponse.ResponseState == false {
-//            presentAlert(title: "안되었음") //수정
+        DispatchQueue.main.async {
+            SelfLoginUserInfo.loginEmail = self.selfLoginIDTextField.text!
+            SelfLoginUserInfo.loginPassword = self.selfLoginPasswordTextField.text!
+            SelfLoginDataManager().LoginPostData()
         }
+
         
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+            if LoginResponse.ResponseState == true {
+                
+                UserDefaults.standard.set(true, forKey: "login_save")
+                
+                let mainstoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+                guard let homeNavigationVC = mainstoryboard.instantiateViewController(identifier: "HomeNavigationViewController") as? HomeNavigationViewController else { return }
+                homeNavigationVC.modalPresentationStyle = .fullScreen
+                self.present(homeNavigationVC, animated: true, completion: nil)
+            
+             }
+        }
+        //데이터 저장
+
 
     }
     
