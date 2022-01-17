@@ -73,3 +73,10 @@
 
 
 ### 8. 하위 범주 상품 조회
+
+<img src= "https://user-images.githubusercontent.com/78063938/149727566-01c0fc80-4860-4526-81c0-ea51f2a9f5b7.png" width="250">
+<img src= "https://user-images.githubusercontent.com/78063938/149727575-20a10bcb-f19c-4c3f-a8a5-d6b57dd79427.png" width="250">
+
+- 카테고리 인덱스로 상품들을 분류하여 카테고리 별로 상품을 조회할 수 있게 하였습니다.
+- GET Method를 사용하여 카테고리 별로 상품을 조회할 수 있도록 하였습니다. 
+
